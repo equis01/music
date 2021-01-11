@@ -8,7 +8,6 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <div id="container">
   <h1>&bull; UVA Music | Contract - Agreement &bull;</h1>
   <div class="underline">
@@ -41,18 +40,17 @@
       <label for="tutor email"></label>
       <input type="email" placeholder="The tutor e-mail is" name="tutor-email" id="email_input" required>
     </div>
-    <label for="percentage to label"></label>
-<input type="text" id="percentage" name="percentage"
-       min="30" max="50" placeholder="Choose percentaje to the label (30% - 50%)" required>
+	<div class="percentage">
     <label for="percentage"></label>
-<input type="text" id="percentage" name="percentage"
-       min="50" max="70" placeholder="Choose percentaje to you (50% - 70%)" required>
+	  <input type="text" id="percentage" name="percentage"
+       min="50" max="70" placeholder="Choose percentaje to you (50% - 70%)" required></div>
     <div class="subject">
       <label for="subject"></label>
       <select placeholder="Subject line" name="subject" id="subject_input" required>
         <option disabled hidden selected>Subject line</option>
         <option>I've covers</option>
         <option>I've my owns songs</option>
+        <option>The previous two</option>
       </select>
     </div>
     <div class="message">
@@ -61,6 +59,11 @@
                                             
 Type what you want us distribute, or how long this contract will last" id="message_input" required></textarea>
       <div>Attach file (signature with identification) </p>  <input type="file" name="archivo" required></p></div>
+  	<div class="start-date">
+	<label for="start">Start date:</label>
+	  <input type="date" id="start" name="trip-start"
+       value="2020-01-01"
+       min="2020-11-11" max="2020-12-31"></div>
     <center><label for="condiciones">I agree the <a href="https://uvamusic.netlify.app/terminos-condiciones">terms and conditions</a>.  </label><input type="checkbox" name="condiciones" required /> </p>
     </div>
 <div class="submit"></center>
@@ -70,5 +73,6 @@ Type what you want us distribute, or how long this contract will last" id="messa
 </div><!-- // End #container -->
 <!-- partial -->
   
+<!-- partial:index.partial.html -->
 </body>
 </html>
